@@ -7,9 +7,10 @@ export default function PublicRoute({
   ...routeProps
 }) {
   const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+  const shouldredirect = isLoggedIn && restricted;
   return (
     <Route {...routeProps}>
-      {isLoggedIn ? <Redirect to="/exitPage" /> : children}
+      {shouldredirect ? <Redirect to="/" /> : children}
     </Route>
   );
 }

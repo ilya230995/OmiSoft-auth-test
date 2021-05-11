@@ -18,10 +18,10 @@ function App() {
   return (
     <div className={s.background}>
       <Switch>
-        <PublicRoute path="/auth">
+        <PublicRoute exact path="/auth" restricted>
           <LogInPage />
         </PublicRoute>
-        <PrivateRoute exact path="/exitPage">
+        <PrivateRoute exact path="/">
           <ExitPage />
         </PrivateRoute>
       </Switch>
