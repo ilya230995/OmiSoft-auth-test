@@ -1,0 +1,83 @@
+@import '//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css';
+.auth {
+  width: 300px;
+  height: 460px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+}
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-bottom: 68px;
+}
+.formTitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 50px;
+}
+.formItem {
+  background-color: #f0f0f0 !important;
+  outline: none;
+  height: 44px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 30px;
+  padding-left: 20px;
+  font-family: FontAwesome;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+}
+.password {
+  margin-bottom: 24px;
+}
+
+.btn {
+  background-color: #4caf50;
+  outline: none;
+  text-transform: uppercase;
+  height: 38px;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #349438;
+}
+
+.mainPageBtn {
+  width: 300px;
+}
+.errors {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: rgb(230, 28, 28);
+  margin-bottom: 20px;
+}
+.someText {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .auth {
+    width: 400px;
+    height: 560px;
+  }
+  .formTitle {
+    font-size: 24px;
+    margin: 0 0 60px;
+  }
+  .formWrapper {
+    width: 340px;
+  }
+}
